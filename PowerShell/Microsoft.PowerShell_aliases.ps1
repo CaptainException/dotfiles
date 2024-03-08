@@ -50,23 +50,23 @@ New-Alias -Name subl -Value $sublime
 #################################
 
 # print working directory
-Function Get-WorkingDirectory { (Get-Location).Path }
-Set-Alias -Name pwd -Value Get-WorkingDirectory
+Function Get-LocationPath { (Get-Location).Path }
+Set-Alias -Name pwd -Value Get-LocationPath
 
 # copy working directory
-Function Get-WorkingDirectory {
+Function Copy-LocationPath {
     param( [switch]$cd )
     # prepend cd command if the param is used
     $CommandString = if ($cd) { "cd " } + (Get-Location).Path
     $CommandString | Set-Clipboard
 }
-New-Alias -Name cwd -Value Get-WorkingDirectory
-New-Alias -Name ccwd -Value "Get-WorkingDirectory -cd"
+New-Alias -Name cwd -Value Copy-LocationPath
+New-Alias -Name ccwd -Value "Copy-LocationPath -cd"
 
 # open directory from clipboard in explorer 
-# TODO add support for reading from stdout
-Function Enter-DirectoryFromClipboardInExplorer { explorer (Get-Clipboard) }
-New-Alias -Name explore -Value Enter-DirectoryFromClipboardInExplorer
+# TODO add support for reading from stdout and error handling
+Function Enter-LocationFromClipboardInExplorer { explorer (Get-Clipboard) }
+New-Alias -Name explore -Value Enter-LocationFromClipboardInExplorer
 
 # cd into GitHub folder
 Function Set-WorkingDirectoryToGithub { Set-Location "~\Documents\GitHub\" }
