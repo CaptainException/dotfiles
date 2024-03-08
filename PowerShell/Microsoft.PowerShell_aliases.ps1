@@ -33,9 +33,9 @@ New-Alias -Name json -Value ConvertFrom-Json
 # ForEach-Object -> fe
 New-Alias -Name fe -Value ForEach-Object
 
-###################################################
-## Run commands for applications outside of PATH ##
-###################################################
+##############################################
+## Aliases for applications outside of PATH ##
+##############################################
 
 # open notepad++
 New-Alias -Name npp -Value "C:\Program Files\Notepad++\notepad++.exe"
@@ -45,9 +45,9 @@ $sublime = "C:\Program Files\Sublime Text\sublime_text.exe"
 New-Alias -Name sublime -Value $sublime
 New-Alias -Name subl -Value $sublime
 
-########################
-## Functional Aliases ##
-########################
+#################################
+## Aliases requiring Functions ##
+#################################
 
 # print working directory
 Function Get-WorkingDirectory { (Get-Location).Path }
