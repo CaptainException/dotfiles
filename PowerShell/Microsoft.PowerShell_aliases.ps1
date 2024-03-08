@@ -57,7 +57,7 @@ Set-Alias -Name pwd -Value Get-LocationPath
 Function Copy-LocationPath {
     param( [switch]$cd )
     # prepend cd command if the param is used
-    $CommandString = if ($cd) { "cd " } + (Get-Location).Path
+    $CommandString = if ($cd) { "cd " } + "(Get-Location).Path"
     $CommandString | Set-Clipboard
 }
 New-Alias -Name cwd -Value Copy-LocationPath
