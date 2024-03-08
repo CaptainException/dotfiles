@@ -1,5 +1,6 @@
-# This Powershell-Alias-File is originally made by CaptainException (github.com/CaptainException/dotfiles)
-# Licensed under the MIT License (https://github.com/MeroFuruya/dotfiles/blob/main/LICENSE)
+# This Powershell-Alias-File was originally made by Marius Kehl (https://github.com/MeroFuruya/dotfiles) and CaptainException (github.com/CaptainException/dotfiles)
+#
+# Licensed under the MIT License (https://github.com/CaptainException/dotfiles/blob/main/LICENSE)
 
 ########################
 ## Command Shorthands ##

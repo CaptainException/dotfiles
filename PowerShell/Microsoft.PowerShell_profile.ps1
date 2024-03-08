@@ -1,18 +1,20 @@
-# This Powershell-Profile is originally made by Marius Kehl (github.com/MeroFuruya/dotfiles)
-# Licensed under the MIT License (https://github.com/MeroFuruya/dotfiles/blob/main/LICENSE)
+# This Powershell-Profile was originally made by Marius Kehl (github.com/MeroFuruya/dotfiles) and modified by me (github.com/CaptainException)
+# It is not forked from the original repository, because I want to keep my own version without having to deal with merge conflicts.
+#
+# Licensed under the MIT License (https://github.com/CaptainException/dotfiles/blob/main/LICENSE)
 
 # tools used:
 # - git -> winget install Git-Git
-# - npm
+# - npm -> scoop install fnm && fnm install 20 && fnm use 20
 # - GitHub-CLI -> winget install GitHub.cli
-# - notepad++
-# - oh-my-posh -> Install-Module oh-my-posh
+# - notepad++ -> winget install Notepad++.Notepad++
 # - wsl2 (lsd-rs, Midnight Commander, jq)
-# - ntop
-# - Microsoft Powertoys
+# - ntop -> winget install ntop
+# - Microsoft Powertoys -> winget install Microsoft.PowerToys
 
 # Powershell-Modules used:
 # - posh-git -> Install-Module posh-git
+# - oh-my-posh -> Install-Module oh-my-posh
 # - npm-completion -> Install-Module npm-completion
 # - updated PSReadline -> "Install-Module -Force PSReadLine"
 
