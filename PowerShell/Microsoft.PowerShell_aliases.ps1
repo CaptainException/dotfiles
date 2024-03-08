@@ -68,6 +68,10 @@ New-Alias -Name ccwd -Value "Copy-LocationPath -cd"
 Function Enter-LocationFromClipboardInExplorer { explorer (Get-Clipboard) }
 New-Alias -Name explore -Value Enter-LocationFromClipboardInExplorer
 
+# cd into directory in clipboard
+Function Enter-LocationFromClipboardInShell { Set-Location (Get-Clipboard) }
+New-Alias -Name cdc -Value Enter-LocationFromClipboardInShell
+
 # cd into GitHub folder
 Function Set-WorkingDirectoryToGithub { Set-Location "~\Documents\GitHub\" }
 New-Alias -Name cdgh -Value Set-WorkingDirectoryToGithub
